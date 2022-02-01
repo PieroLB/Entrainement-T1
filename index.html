@@ -20,13 +20,16 @@
 
     <title>QCM de maths</title>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
     <div id="div-parametre">
+        <h1 style="text-align: center;">Entrainement aux QCM de Maths</h1>
+        <div style="text-align: center;"><i>Sélectionner le nombre de questions que vous voulez faire et le QCM avec lequel vous voulez vous entrainer</i></div>
+        <br>
         Nombre de questions (max=9) : 
         <input type="number" id="input-nbrquestions" min="1" max="9" style="width: 3em;">
         <br>
         <br>
-        Filtrer par rapport aux QCM : 
+        Choix du QCM : 
         <br>
         <input type="checkbox" id="qcm1" onclick="this.checked = false"> QCM n°1 <span style="color: red;">(pas encore disponible)</span>
         <br>
@@ -47,9 +50,11 @@
         <button id="button-confirmer" onclick="f_confirmer()" style="display: none;">Confirmer</button>
     </div>
     <div id="div-fini" style="display: none;">
-        Question réussie : <span id="span-points"></span> / <span id="span-totpoints"></span>
+        <h1>Bravo vous avez fini !!!</h1>
+        Question(s) réussie(s) : <span id="span-points"></span> / <span id="span-totpoints"></span>
         <br>
         <span id="span-pourcentage"></span> % de réussite
+        <br>
         <br>
         <button onclick="location.reload()">Recommencer</button>
         <br>
