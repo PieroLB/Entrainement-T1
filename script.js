@@ -84,14 +84,14 @@ var questions = [
     },
     {
         qcm : 4,
-        enonce : ["On considère les vecteurs $\\vec{u}(1;-2;5)$ et $\\vec{v}(-5;1;3)$","Le produit scalaire $\\vec{u}~.~\\vec{v}$ est égal à :"],
+        enonce : ["On considère les vecteurs $\\vec{u}(1;-2;5)$ et $\\vec{v}(-5;1;3)$","Le produit scalaire $\\vec{u}~\\cdot~\\vec{v}$ est égal à :"],
         choix : [22,8,-5,-7],
         bonne_reponse : 1
     },
     {
         qcm : 4,
         enonce : ["Si $\\overrightarrow{AB}~.~\\overrightarrow{BC} = 6$ et $BC = 3$, alors"],
-        choix : ["$AB = 2$", "$\\overrightarrow{AC}~.~\\overrightarrow{BC} = 15$", "$cos(\\widehat{ABC}) > 0$"],
+        choix : ["$AB = 2$", "$\\overrightarrow{AC}~\\cdot~\\overrightarrow{BC} = 15$", "$cos(\\widehat{ABC}) > 0$"],
         bonne_reponse : 2
     },
     {
@@ -102,7 +102,7 @@ var questions = [
     },
     {
         qcm : 4,
-        enonce : ["L'espace est muni d'un repère orthonormé $(O~;~\vec{i}~,~\vec{j}~,~\vec{k})$.","On donne les points : $A(-4~;2~;-1~)~,B(-3~;3~;-4~)~,C(1~;4~;2~)~et~D(4,5~;7,5~;-8,5)$.","Les vecteurs $\overrightarrow{AB}~,\overrightarrow{BC}~et\overrightarrow{AD}$ sont :"],
+        enonce : ["L'espace est muni d'un repère orthonormé $(O~;~\\vec{i}~,~\\vec{j}~,~\\vec{k})$.","On donne les points : $A(-4~;2~;-1~)~,B(-3~;3~;-4~)~,C(1~;4~;2~)~et~D(4,5~;7,5~;-8,5)$.","Les vecteurs $\\overrightarrow{AB}~,\\overrightarrow{BC}$ et $\\overrightarrow{AD}$ sont :"],
         choix : ["colinéaires", "deux à deux orhtogonaux", "coplanaires", "non coplanaires"],
         bonne_reponse : 2
     },
@@ -115,13 +115,13 @@ var questions = [
     {
         qcm : 4,
         enonce : ["Soit SABCD une pyramide de base ABCD, telle que toutes les arêtes sont de longueur 1, alors"],
-        choix : ["$\\overrightarrow{SA}~.~\\overrightarrow{SB}$ = 1", "$\\overrightarrow{SD}~.~\\overrightarrow{SC}$ = 0,5", "$\\overrightarrow{AC}~.~\\overrightarrow{DB}$ = -1", "$\\overrightarrow{SD}~.~\\overrightarrow{DB}$ = 0"],
+        choix : ["$\\overrightarrow{SA}~\\cdot~\\overrightarrow{SB}$ = 1", "$\\overrightarrow{SD}~\\cdot~\\overrightarrow{SC}$ = 0,5", "$\\overrightarrow{AC}~\\cdot~\\overrightarrow{DB}$ = -1", "$\\overrightarrow{SD}~\\cdot~\\overrightarrow{DB}$ = 0"],
         bonne_reponse : 1
     },
     {
         qcm : 4,
         enonce : ["Si A(1; 1; 3), B(4; 2; 7) et C(5; -2; 1), alors"],
-        choix : ["$\\overrightarrow{AB}~.~\\overrightarrow{AC}$ = -8", "$\\widehat{ABC}~\\approx~0,83~radian$ à 0,01 près", "(AB) et (AC) sont perpendiculaires", "$\\overrightarrow{CA}~.~\\overrightarrow{CB}$ = 32"],
+        choix : ["$\\overrightarrow{AB}~\\cdot~\\overrightarrow{AC}~=~-8$", "$\\widehat{ABC}~\\approx~0,83~rad$ à 0,01 près", "(AB) et (AC) sont perpendiculaires", "$\\overrightarrow{CA}~\\cdot~\\overrightarrow{CB}$ = 32"],
         bonne_reponse : 1
     },
     {
