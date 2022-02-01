@@ -1,5 +1,88 @@
 var questions = [
     {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "La droite (HD) est orthogonal au plan (ABC)"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube, le point I' est le centre de la face ADHE et le point I est le centre de la face BCGF."],
+        img : "img/cube2.png",
+        choix : ["un triangle", "un quadrilatère", "un pentagone", "un hexagone"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 1,
+        enonce : ["P et P' sont deux plans, d est une droite de P et d' une droite de P'", "Si d et d' sont parallèles, alors :"],
+        choix : ["P et P' sont parallèles", "P et P' sont sécants", "P et P' sont confondus", "On ne peut pas préciser la position relative de P et P'"],
+        bonne_reponse : 3
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les plans (BDF) et (EFG) sont sécants selon (HF)"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (AH) et (ED) sont perpendiculaires"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (AH) et (ED) sont perpendiculaires"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 3,
+        enonce : ["Le plan P est défini par les points E, F et G tels que $\\vec{EF}(2; -1; 4) et $\\vec{EG}(1; 2; -2)$","Le plan P admet pour vecteur normal le vecteur $\\vec{n}$ tel que :"],
+        choix : ["$\\vec{n}(-2; 0; 1)$", "$\\vec{n}(-6; 8; 5)$", "$\\vec{n}(1; -2; -1)$", "$\\vec{n}(8; -4; -5)$"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 3,
+        enonce : ["Les plans P1 et P2 d'équations respectives :","2x - 3y + z = 0 et 2x + 3z + 1 = 0 sont parallèles."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 3,
+        enonce : ["Une équation du plan passant par A(1; 1; 1)","et de vecteur normal $\\vec{n}(2; 0; 3)$ est : 4x + 6y - 10 = 0"],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 3,
+        enonce : ["Soit P le plan d'équation 4x - 2y + 3z - 1 = 0.","La droite passant par A(1; -1; -2) et de vecteur directeur $\\vec{u}(5; 1; -6)$ coupe le plan P en A."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 3,
+        enonce : ["Les plans P1 et P2 d'équations respectives : x + 3y + z = 0 et -3x + y + z = 0 sont perpendiculaires."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 3,
+        enonce : ["Le plan passant par le point A(1; -0,5; 3)","et de vecteur normal $\\vec{3; 2; -5)$ a pour équation"],
+        choix : ["3x + 2y - 5z - 13 = 0", "x - 0,5y + 3z + 13 = 0", "-6x - 4y + 10z - 26 = 0", "3x - y - 15z + 41,5 = 0"],
+        bonne_reponse : 2
+    },
+    {
+        qcm : 3,
+        enonce : ["Soit A(1; -1; 1), B(2; -2; 2) et C(0; 7; -1).","Le plan (ABC) a pour vecteur normal"],
+        choix : ["$\\vec{n}(1; -2; -3)$", "$\\vec{n}(18; -3; 21)$", "$\\vec{n}(2; -2; 2)$", "$\\vec{n}(-6; 1; 7)$"],
+        bonne_reponse : 3
+    },
+    {
         qcm : 4,
         enonce : ["On considère les vecteurs $\\vec{u}(1;-2;5)$ et $\\vec{v}(-5;1;3)$","Le produit scalaire $\\vec{u}~.~\\vec{v}$ est égal à :"],
         choix : [22,8,-5,-7],
@@ -19,10 +102,40 @@ var questions = [
     },
     {
         qcm : 4,
-        enonce : ["L'espace est muni d'un repère orthonormé $(O~;~\\vec{i}~,~\\vec{j}~,~\\vec{k})$.","On donne les points : $A(-4~;2~;-1~)~,B(-3~;3~;-4~)~,C(1~;4~;2~)~et~D(4,5~;7,5~;-8,5)$.","Les vecteurs $\\overrightarrow{AB}~,\\overrightarrow{BC}~et\\overrightarrow{AD}$ sont :"],
+        enonce : ["L'espace est muni d'un repère orthonormé $(O~;~\vec{i}~,~\vec{j}~,~\vec{k})$.","On donne les points : $A(-4~;2~;-1~)~,B(-3~;3~;-4~)~,C(1~;4~;2~)~et~D(4,5~;7,5~;-8,5)$.","Les vecteurs $\overrightarrow{AB}~,\overrightarrow{BC}~et\overrightarrow{AD}$ sont :"],
         choix : ["colinéaires", "deux à deux orhtogonaux", "coplanaires", "non coplanaires"],
         bonne_reponse : 2
     },
+    {
+        qcm : 4,
+        enonce : ["Le plan P admet pour vecteur normal le vecteur $\\vec{n}~(-6~;8~;5~)$.","Un autre vecteur normal au plan P est :"],
+        choix : ["le vecteur de coordonées (3; 4; 2,5)", "tout vecteur orthogonal à $\vec{n}$", "tout vecteur colinéaire à $\vec{n}$"],
+        bonne_reponse : 2
+    },
+    {
+        qcm : 4,
+        enonce : ["Soit SABCD une pyramide de base ABCD, telle que toutes les arêtes sont de longueur 1, alors"],
+        choix : ["$\\overrightarrow{SA}~.~\\overrightarrow{SB}$ = 1", "$\\overrightarrow{SD}~.~\\overrightarrow{SC}$ = 0,5", "$\\overrightarrow{AC}~.~\\overrightarrow{DB}$ = -1", "$\\overrightarrow{SD}~.~\\overrightarrow{DB}$ = 0"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 4,
+        enonce : ["Si A(1; 1; 3), B(4; 2; 7) et C(5; -2; 1), alors"],
+        choix : ["$\\overrightarrow{AB}~.~\\overrightarrow{AC}$ = -8", "$\\widehat{ABC}~\\approx~0,83~radian$ à 0,01 près", "(AB) et (AC) sont perpendiculaires", "$\\overrightarrow{CA}~.~\\overrightarrow{CB}$ = 32"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 4,
+        enonce : ["L'espace est muni d'un repère orthonormé $(O; \\vec{i},~\\vec{j},~\\vec{k})$.", "On donne les points : A(-4; 2; -1), B(-3; 3; -4), C(1; 4; 2) et D(4,5; 7,5; -8,5).","Les vecteurs $\\vec{AB}$ et $\\vec{CD}$ sont :"],
+        choix : ["colinéaires", "orhtogonaux", "ni colinéaires ni orthogonaux", "de même norme"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 4,
+        enonce : ["L'espace est muni d'un repère orthonormé $(O; \\vec{i},~\\vec{j},~\\vec{k})$.", "On donne les points : A(-4; 2; -1), B(-3; 3; -4), C(1; 4; 2) et D(4,5; 7,5; -8,5).","Les vecteurs $\\vec{AB}$ et $\\vec{AC}$ sont :"],
+        choix : ["colinéaires", "orhtogonaux", "ni colinéaires ni orthogonaux", "de même norme"],
+        bonne_reponse : 2
+    }
 ];
 
 var l_qcm = [];
@@ -37,6 +150,7 @@ window.onload = function() {
     }
 }
 
+
 function start() {
     for (let i=1; i<=4; i++) {
         if (document.getElementById('qcm'+i).checked) {
@@ -46,10 +160,15 @@ function start() {
     if (document.getElementById('input-nbrquestions').value == "") {
         alert('Il faut indiquer le nombre de questions')
     }
+    else if (document.getElementById('input-nbrquestions').value > 9 || document.getElementById('input-nbrquestions').value < 1) {
+        alert("Le QCM n°4 est le seul QCM disponible pour l'instant. Il y a donc 9 questions maximum.")
+        document.getElementById('input-nbrquestions').value = 9;
+    }
     else if (l_qcm.length == 0) {
         alert('Il faut sélectionner au moins un QCM')
     }
     else {
+        l_qcm = [4]
         document.getElementById('div-parametre').style.display = "none";
         document.getElementById('div-qcm').style.display = "inline-block";
         document.getElementById('span-numeroquestiontot').textContent = document.getElementById('input-nbrquestions').value;
