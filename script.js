@@ -109,7 +109,7 @@ var questions = [
     {
         qcm : 4,
         enonce : ["Le plan P admet pour vecteur normal le vecteur $\\vec{n}~(-6~;8~;5~)$.","Un autre vecteur normal au plan P est :"],
-        choix : ["le vecteur de coordonées (3; 4; 2,5)", "tout vecteur orthogonal à $\vec{n}$", "tout vecteur colinéaire à $\vec{n}$"],
+        choix : ["le vecteur de coordonées (3; 4; 2,5)", "tout vecteur orthogonal à $\\vec{n}$", "tout vecteur colinéaire à $\\vec{n}$"],
         bonne_reponse : 2
     },
     {
