@@ -217,6 +217,9 @@ function f_questions() {
         ct_enonce.innerHTML += "<br>";
     }
     MathJax.Hub.Queue(['Typeset', MathJax.Hub, ct_enonce]);
+    if (questions[num_question_t].img != null) {
+        document.getElementById('div-enonce').innerHTML += "<img src='"+questions[num_question_t].img+"' style='height:10%'>";
+    }
     var ct_choix = document.getElementById('div-reponse');
     for (let i=0; i<questions[num_question_t].choix.length; i++) {
         inpt = document.createElement('input');
