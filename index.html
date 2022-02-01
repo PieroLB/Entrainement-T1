@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
@@ -17,6 +18,7 @@
     </script>
 
     <script defer src="script.js"></script>
+
 
     <title>QCM de maths</title>
 </head>
@@ -43,7 +45,7 @@
         <button id="button-start" onclick="start()">Commencer le QCM</button>
     </div>
     <div id="div-qcm" style="border: solid black 1px; border-radius: 5px; display: none; padding: 20px;">
-        Question <span id="span-numeroquestion"></span> / <span id="span-numeroquestiontot"></span>
+        <strong>Question <span id="span-numeroquestion"></span>/<span id="span-numeroquestiontot"></span></strong>
         <div id="div-enonce"></div>
         <div id="div-reponse"></div>
         <br>
