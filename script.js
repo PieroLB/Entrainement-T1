@@ -1,6 +1,26 @@
 var questions = [
     {
         qcm : 1,
+        enonce : ["ABCDEFGH est un cube, le point I' est le centre de la face ADHE et le point I est le centre de la face BCGF.","Les plans (ABH) et (CDE) sont :"],
+        img : "img/cube2.png",
+        choix : ["paralléles", "sécants selon la droite (EF)","],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (HF) et (IJ) sont paralléles."],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["Si deux plans sont paralléles, alors toute droite de l'un est paralléles à l'autre."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 1,
         enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "La droite (HD) est orthogonal au plan (ABC)"],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
@@ -35,7 +55,7 @@ var questions = [
     },
     {
         qcm : 1,
-        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (AH) et (ED) sont perpendiculaires"],
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les plans (DHE) et (GCB) sont paralléles."],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
         bonne_reponse : 0
