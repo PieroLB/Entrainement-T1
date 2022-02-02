@@ -1,14 +1,80 @@
 var questions = [
     {
         qcm : 1,
-        enonce : ["ABCDEFGH est un cube, le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les plans (HDI) et (GCJ) ne sont pas sécants"],
+        enonce : ["Soit P un plan, d une droite strictement parallèle à P et A un point n'appartenant ni à P ni à d.", "Le plan P' déterminé par d et A est parallèle à P."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 1,
+        enonce : ["P et P’ sont deux plans, d est une droite de P et d’ une droite de P’.", "Si P et P’ sont parallèles, alors :"],
+        choix : ["d et d’ sont parallèles", "d et d’ sont sécantes", "d et d’ ne sont pas coplanaires", "on ne peut pas préciser la position relative de d et d’"],
+        bonne_reponse : 3
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube", "Le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les droites (BF) et (EG) sont orthogonales"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["<i>Des droites concourantes sont des droites qui se coupent en un même point</i><br>","P et P’ sont deux plans, d est une droite de P et d’ une droite de P’.", "Si P et P’ sont sécants suivant une droite D et si d et d’ sont sécantes, alors :"],
+        choix : ["d et d’ sont parallèles à D", "d et d’ sont sécantes à D mais d, d’ et D ne sont pas concourantes", "d, d’ et D sont concourantes", "on ne peut pas préciser la position relative des droites d, d’ et D"],
+        bonne_reponse : 2
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube","Le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les droites (EG) et (IJ) sont orthogonales"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Les droites (HF) et (AC) sont :"],
+        img : "img/cube2.png",
+        choix : ["orthogonales", "coplanaires", "sécantes", "parallèles"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube.", "Les droites (AD) et (FG) sont :"],
+        img : "img/cube2.png",
+        choix : ["sécantes", "non coplanaires", "parallèles", "orthogonales"],
+        bonne_reponse : 2
+    },
+    {
+        qcm : 1,
+        enonce : ["Si une droite d est strictement parallèle à un plan P et si d' est une droite de P, alors d et d' sont parallèles ou non coplanaires."],
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube","Le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les droites (HI) et (GJ) sont sécantes"],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
         bonne_reponse : 1
     },
     {
         qcm : 1,
-        enonce : ["ABCDEFGH est un cube, le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "La droite (HD) est orthogonale au plan (ABC)"],
+        enonce : ["ABCDEFGH est un cube, le point I' est le centre de la face ADHE et le point I est le centre de la face BCGF.", "La droite (II') est :"],
+        img : "img/cube2.png",
+        choix : ["coplanaire à la droite (BC)", "orthogonale à la droite (AC)", "parallèle à la droite (AF)", "orthogonale à la droite (AD)"],
+        bonne_reponse : 3
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube", "Le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les plans (HDI) et (GCJ) ne sont pas sécants"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube","Le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "La droite (HD) est orthogonale au plan (ABC)"],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
         bonne_reponse : 0
@@ -17,28 +83,21 @@ var questions = [
         qcm : 1,
         enonce : ["ABCDEFGH est un cube, le point I' est le centre de la face ADHE et le point I est le centre de la face BCGF.","Les plans (ABH) et (CDE) sont :"],
         img : "img/cube2.png",
-        choix : ["paralléles", "sécants selon la droite (EF)","sécants selon la droite (II')", "confondus"],
+        choix : ["parallèles", "sécants selon la droite (EF)","sécants selon la droite (II')", "confondus"],
         bonne_reponse : 2
     },
     {
         qcm : 1,
-        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (HF) et (IJ) sont paralléles."],
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les droites (HF) et (IJ) sont parallèles."],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
         bonne_reponse : 0
     },
     {
         qcm : 1,
-        enonce : ["Si deux plans sont paralléles, alors toute droite de l'un est paralléles à l'autre."],
+        enonce : ["Si deux plans sont parallèles, alors toute droite de l'un est parallèle à toute droite de l'autre."],
         choix : ["Vrai", "Faux"],
         bonne_reponse : 1
-    },
-    {
-        qcm : 1,
-        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "La droite (HD) est orthogonal au plan (ABC)"],
-        img : "img/cube1.png",
-        choix : ["Vrai", "Faux"],
-        bonne_reponse : 0
     },
     {
         qcm : 1,
@@ -69,7 +128,7 @@ var questions = [
     },
     {
         qcm : 1,
-        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les plans (DHE) et (GCB) sont paralléles."],
+        enonce : ["ABCDEFGH est un cube.", "Le point I est le milieu du segment [CD]", "Le point J est le milieu du segment [BC]", "Les plans (DHE) et (GCB) sont parallèles."],
         img : "img/cube1.png",
         choix : ["Vrai", "Faux"],
         bonne_reponse : 0
@@ -126,7 +185,7 @@ var questions = [
         qcm : 4,
         enonce : ["Si $\\overrightarrow{AB}~.~\\overrightarrow{BC} = 6$ et $BC = 3$, alors"],
         choix : ["$AB = 2$", "$\\overrightarrow{AC}~\\cdot~\\overrightarrow{BC} = 15$", "$cos(\\widehat{ABC}) > 0$"],
-        bonne_reponse : 2
+        bonne_reponse : 1
     },
     {
         qcm : 4,
@@ -177,6 +236,7 @@ var deja_posées = [];
 var num_question_t = 0;
 var num_question = 0;
 var points = 0;
+var nbr_questions_max = 0;
 
 window.onload = function() {
     for (let i=1; i<=4; i++) {
@@ -189,20 +249,25 @@ function start() {
     for (let i=1; i<=4; i++) {
         if (document.getElementById('qcm'+i).checked) {
             l_qcm.push(i);
+            if (i == 4){
+                nbr_questions_max += 9;
+            }
+            else if (i == 1) {
+                nbr_questions_max += 20;
+            }
         }
     }
     if (document.getElementById('input-nbrquestions').value == "") {
         alert('Il faut indiquer le nombre de questions')
     }
-    else if (document.getElementById('input-nbrquestions').value > 9 || document.getElementById('input-nbrquestions').value < 1) {
-        alert("Le QCM n°4 est le seul QCM disponible pour l'instant. Il y a donc 9 questions maximum.")
-        document.getElementById('input-nbrquestions').value = 9;
-    }
     else if (l_qcm.length == 0) {
         alert('Il faut sélectionner au moins un QCM')
     }
+    else if (document.getElementById('input-nbrquestions').value > nbr_questions_max || document.getElementById('input-nbrquestions').value < 1) {
+        alert("Il y a "+nbr_questions_max+" questions maximum.")
+        document.getElementById('input-nbrquestions').value = nbr_questions_max;
+    }
     else {
-        l_qcm = [4]
         document.getElementById('div-parametre').style.display = "none";
         document.getElementById('div-qcm').style.display = "inline-block";
         document.getElementById('span-numeroquestiontot').textContent = document.getElementById('input-nbrquestions').value;
