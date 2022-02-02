@@ -1,10 +1,24 @@
 var questions = [
     {
         qcm : 1,
+        enonce : ["ABCDEFGH est un cube, le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "Les plans (HDI) et (GCJ) ne sont pas sécants"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 1
+    },
+    {
+        qcm : 1,
+        enonce : ["ABCDEFGH est un cube, le point I est le milieu du segment [CD]","Le point J le milieu du segment [BC]", "La droite (HD) est orthogonale au plan (ABC)"],
+        img : "img/cube1.png",
+        choix : ["Vrai", "Faux"],
+        bonne_reponse : 0
+    },
+    {
+        qcm : 1,
         enonce : ["ABCDEFGH est un cube, le point I' est le centre de la face ADHE et le point I est le centre de la face BCGF.","Les plans (ABH) et (CDE) sont :"],
         img : "img/cube2.png",
-        choix : ["paralléles", "sécants selon la droite (EF)","],
-        bonne_reponse : 0
+        choix : ["paralléles", "sécants selon la droite (EF)","sécants selon la droite (II')", "confondus"],
+        bonne_reponse : 2
     },
     {
         qcm : 1,
